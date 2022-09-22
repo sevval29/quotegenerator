@@ -5,7 +5,10 @@ function getApi(){
     .then((response)=>response.json())
     .then((json)=>{
          elem = document.getElementById("demo"); // Find an element 
-elem.innerHTML = json.quote;  
+elem.innerHTML = json.quote; 
+author= document.getElementById("author");
+         author.innerHTML="  --Kanye West--";
+
     })
     
    
